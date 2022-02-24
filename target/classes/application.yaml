@@ -1,0 +1,29 @@
+# 以下是Person对象的属性配置
+person:
+  user_name: zhangsan                    #等同于userName属性
+  boss: false
+  birth: 2019/12/12 20:12:33             # 日期的写法
+  age: 18
+  pet:                                   #对象的写法
+    name: tomcat
+    weight: 23.4
+  interests:                             # 数组的另一种写法: interests: [篮球,游泳]
+    - 篮球
+    - 足球
+    - 18
+  animal:                                # List集合底层也是数组
+    - jerry
+    - mario
+  score:                                 # Map集合的这种写法和对象一样,另一种写法是score: {english:99,math:100}
+    english:
+      first: 30
+      second: 40
+      third: 50
+    math: [131,140,148]
+    chinese: {first: 128,second: 136}
+  salarys: [3999,4999.98,5999.99]         # Set集合底层也是数组
+  allPets:                                #混合的写法
+    sick:
+      - {name: tom}
+      - {name: jerry,weight: 47}
+    health: [{name: mario,weight: 47}]
